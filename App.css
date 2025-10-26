@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calculator {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.display {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: right;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.expression {
+  color: gray;
+  font-size: 14px;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+button.clear {
+  background: #f76c6c;
+  color: white;
+  grid-column: span 2;
+}
+
+button.delete {
+  background: #fca652;
+  color: white;
+}
+
+button.equal {
+  background: #4caf50;
+  color: white;
+}
+
+button.zero {
+  grid-column: span 2;
+}
+
+.history-btn {
+  margin-top: 10px;
+  background: #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.history {
+  text-align: left;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.history-item {
+  padding: 6px;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.history-item:hover {
+  background: #ececec;
+}
